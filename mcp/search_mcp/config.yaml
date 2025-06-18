@@ -1,0 +1,27 @@
+build_info:
+  python_version: '3.11'
+
+inference_compute_info:
+  cpu_limit: 1000m
+  cpu_memory: 1Gi
+  num_accelerators: 0
+
+model:
+  app_id: mcp-examples  # app name in "Projects" - in other words, project name
+  id: blog_writing_search_mcp  # click on "models", and the name is the model name (model id)
+  
+  # Supported model types:
+  # [embedding-classifier,audio-embedder,visual-detector-embedder,optical-character-recognizer,
+  # image-to-image,image-to-text,text-to-image,clusterer,image-color-recognizer,concept-thresholder,
+  # region-thresholder,concept-synonym-mapper,annotation-writer,image-crop,random-sample,
+  # visual-keypointer,email,sms,object-counter,image-align,input-searcher,input-filter,text-to-audio,
+  # regex-based-classifier,prompter,rag-prompter,image-prompter,concept-to-text-mapper,mcp,openai,
+  # barcode-operator,isolation-operator,language-id-operator,text-aggregation-operator,
+  # tiling-region-aggregator-operator,track-representation-operator,image-tiling-operator,
+  # keyword-filter-operator,raft-operator,tokens-to-entity-operator,byte-tracker,centroid-tracker,
+  # kalman-filter-tracker,multimodal-to-text,text-to-text,visual-anomaly-heatmap,visual-classifier,
+  # audio-classifier,text-classifier,visual-detector,zero-shot-image-segmenter,zero-shot-text-classifier,
+  # audio-to-text,visual-segmenter,zero-shot-image-classifier,text-embedder,text-token-classifier,
+  # visual-embedder,multimodal-embedder]
+  model_type_id: mcp # msg, such as text-to-image mode, text-to-text, etc.
+  user_id: nperla
